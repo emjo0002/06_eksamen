@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --hover_col: green;
+  --bagground_col: #eeeae7;
+  --primary_font: "Londrina Shadow", sans-serif;
+  --secondary_font: "Londrina Solid", sans-serif;
+  --brodtekst_font: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bagground_col);
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+  font-family: var(--primary_font);
+  font-size: 4cqw;
+  position: relative;
+  top: 6%;
+  left: 4%;
+}
+
+h2 {
+  font-family: var(--primary_font);
+  font-size: 3cqw;
+  position: relative;
+  top: 2%;
+  left: 4.3%;
+}
+
+.overskrift {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.overskrift p {
+  grid-column: 1;
+  left: 9%;
+  font-size: 1.6cqw;
+  font-family: var(--secondary_font);
+}
+
+.overskrift h2 {
+  grid-column: 1;
+  position: relative;
+  margin-top: 4%;
+  left: 8.5%;
+}
+
+.overskrift h1 {
+  left: 8%;
+}
+
+p {
+  margin-top: 1.5%;
+  position: relative;
+  left: 9%;
+  top: 5%;
+  font-size: 1.36cqw;
+  font-family: var(--brodtekst_font);
+  line-height: 1.5;
+}
+
+.ny_paragrah {
+  margin-top: 7%;
+}
+
+.dokumentation {
+  grid-column: 2;
+}
+
+.dokumentation h2 {
+  position: relative;
+  left: 20%;
+}
+
+.om_mig {
+  position: relative;
+  left: 8%;
+  top: 0%;
+}
+
+.ul_om_mig {
+  position: relative;
+  left: 12%;
+  margin-top: 15%;
+  font-size: 2cqw;
+  font-family: var(--secondary_font);
+  padding-bottom: 10%;
+}
+
+.om_mig_protrat {
+  position: relative;
+  height: auto;
+  width: 60%;
+  left: 20%;
+  top: 5%;
+}
+
+.studiestartsprøven {
+  position: relative;
+  width: 70%;
+  height: auto;
+  left: 20%;
+  top: 12%;
+}
+
+.tema_3_billeder {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.LoFi {
+  position: relative;
+  width: 60%;
+  height: auto;
+  left: 20%;
+}
+
+.HiFi {
+  position: relative;
+  width: 60%;
+  height: auto;
+  left: 20%;
+  margin-top: 2%;
+}
+
+.SSC {
+  position: relative;
+  width: 60%;
+  height: auto;
+  left: 20%;
+  top: 30%;
+}
+
+.tema_3_div {
+  position: relative;
+  top: 10%;
+}
+
+.spil {
+  position: sticky;
+  height: auto;
+  width: 70%;
+  left: 60%;
+  top: 50%;
+}
+
+.person_med_passion {
+  position: relative;
+  width: 60%;
+  height: auto;
+  left: 20%;
+  top: 15%;
+}
+
+.virksomhedssite {
+  position: relative;
+  margin-top: 5%;
+}
+
+.for_og_efter_div h2 {
+  font-size: 2cqw;
+  left: 20%;
+}
+
+.for_og_efter_div {
+  gap: 2%;
+}
+
+.for {
+  position: relative;
+  width: 60%;
+  height: auto;
+  left: 20%;
+  top: 30%;
+}
+
+.efter {
+  position: relative;
+  width: 60%;
+  height: auto;
+  left: 20%;
+  top: 30%;
+}
+
+.om_mig_div {
+  margin-right: 15%;
+}
+
+.grid_1-1 a {
+  color: green;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--bagground_col);
+  padding-bottom: 3%;
+  margin-top: 10%;
+  border-top: solid;
+  padding-top: 3%;
+}
+
+.kontakt {
+  position: relative;
+  left: 33%;
+}
+
+.kontakt h2 {
+  font-size: 2cqw;
+  font-family: var(--secondary_font);
+}
+
+.kontakt p {
+  margin-top: 2%;
+  font-size: 1.5cqw;
+  left: 4%;
+}
+
+.om_mig_footer {
+  position: relative;
+  left: 33%;
+}
+
+.om_mig_footer a {
+  font-size: 2cqw;
+  font-family: var(--secondary_font);
+}
+
+@media screen and (max-width: 800px) {
+  .grid_1-1 {
+    display: block;
+  }
+
+  .overskrift {
+    display: block;
+  }
+
+  .overskrift p {
+    margin-right: 15%;
+  }
+
+  .grid_1-1 p {
+    left: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .grid_1-1 img {
+    margin-top: 5%;
+  }
+
+  .studiestartsprøven {
+    left: 15%;
+  }
+
+  .spil {
+    left: 15%;
+  }
+
+  .ny_paragrah {
+    margin-top: 5%;
+  }
+
+  .om_mig_protrat {
+    width: 40%;
+    left: 30%;
+  }
+
+  .om_mig_div {
+    margin-right: 0%;
+  }
+
+  .for_og_efter_div {
+    margin-top: 5%;
+  }
+}

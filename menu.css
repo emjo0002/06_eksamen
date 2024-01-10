@@ -1,0 +1,196 @@
+html {
+  --hover_col: green;
+  --bagground_col: #eeeae7;
+  --primary_font: "Londrina Shadow", sans-serif;
+  --secondary_font: "Londrina Solid", sans-serif;
+  --brodtekst_font: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--secondary_font);
+  top: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 2cqw;
+  animation-name: flyv_kf3;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+}
+
+/* Det næste grønne her er fra chatten */
+
+/* Dropdown Button */
+.dropbtn {
+  font-size: 2cqw;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header nav ul {
+  justify-content: space-between;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.logo {
+  aspect-ratio: 203.66/257.89;
+  width: 4%;
+  height: auto;
+}
+
+a:hover {
+  color: var(--hover_col);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 2px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger {
+  display: none;
+}
+
+.gem {
+  display: none;
+}
+
+.dropbtn {
+  color: black;
+}
+
+.dropbtn :hover {
+  color: var(--hover_col);
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background-color: white;
+    opacity: 80%;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 2cqw;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .gem {
+    display: block;
+  }
+}

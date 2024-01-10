@@ -1,0 +1,8 @@
+@keyframes flyv_kf3 {
+  from {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
