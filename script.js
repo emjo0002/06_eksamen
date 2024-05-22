@@ -2,7 +2,7 @@ window.addEventListener("load", sidenVises);
 
 function sidenVises() {
   console.log("sidenVises");
-  document.querySelector(".færdig_mand_sprite").addEventListener("mouseover", stickmandMouseoverHandler);
+  document.querySelector(".færdig_mand_container").addEventListener("mouseover", stickmandMouseoverHandler);
   document.querySelector(".læse_mand_sprite").addEventListener("mouseover", stickmandMouseoverHandler);
   document.querySelector(".tænke_mand_sprite").addEventListener("mouseover", stickmandMouseoverHandler);
   document.querySelector(".baby_sprite").addEventListener("mouseover", stickmandMouseoverHandler);
